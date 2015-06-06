@@ -1,1 +1,1 @@
-#include <stdio.h>int main( void ) {	printf("オムライス\n");	return 0;}
+#include <stdio.h>#include <stdlib.h>#define FILE_OPEN_ERROR 1int main( void ) {	FILE *fp;	char recipe_data[128];			fp = fopen( "./recipe-data.txt", "r" );	if( fp == NULL ) {		printf("FILE OPEN ERROR.\n");		exit( FILE_OPEN_ERROR );	}	while( fscanf( fp, "%s", recipe_data ) != EOF ) {		printf("%s", recipe_data );	}		fclose( fp );	return 0;}
