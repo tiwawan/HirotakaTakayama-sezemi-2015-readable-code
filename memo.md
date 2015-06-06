@@ -40,3 +40,74 @@ exit(1);
 ### この書き方の一言説明
 
 自己記述的定数名
+
+
+--------
+ここからtiwawan
+
+# 1
+
+### 実際のコード
+https://github.com/HirotakaTakayama/HirotakaTakayama-sezemi-2015-readable-code
+```
+FILE *fp;
+```
+
+### リーダブルだと思った理由
+fpという名前はC言語でFILE構造体のポインタの名前としてよく使われるので、C言語を使っている人なら何を意味するかすぐわかる。
+
+### この書き方の一言説明
+常識的な名前
+
+ 
+# 2
+
+### 実際のコード
+https://github.com/HirotakaTakayama/HirotakaTakayama-sezemi-2015-readable-code
+```
+	while( fscanf( fp, "%s", recipe_data ) != EOF ) {
+```
+
+### リーダブルだと思った理由
+recipe_dataに読み込んでそのままfscanfの戻り値を比較するのは、一時変数にfscanfの戻り値を一旦入れるより簡潔で、おそらくCプログラマはこのような書き方には慣れていると思うので。
+
+### この書き方の一言説明
+短い
+
+# 3
+
+### 実際のコード
+https://github.com/HirotakaTakayama/HirotakaTakayama-sezemi-2015-readable-code
+
+### リーダブルだと思った理由
+変数宣言、引数の数のチェック、ファイルを開く、レシピ名の出力、終了処理のそれぞれの中では改行がなく、それらの間では一行開けるという一貫した改行の方針がとられている。
+
+### この書き方の一言説明
+改行のルールに従う
+
+
+# 4
+
+### 実際のコード
+https://github.com/HirotakaTakayama/HirotakaTakayama-sezemi-2015-readable-code
+```
+	if( argc != ARG_NUM + 1 ) {
+		printf("指定する引数の数が違います.\n");
+		exit( EXIT_FAILURE );
+	}
+```
+
+### リーダブルだと思った理由
+括弧の前後にスペースが入っていたりいなかったりするが、これはダブルクォーテーションは空白部分が大きくスペースに近い見た目をしているのでカッコと ダブルクォーテーションが連続するときはあえてスペースを入れていないのだと思う。
+
+### この書き方の一言説明
+見た目を考慮した空白のルール
+
+
+
+
+
+
+
+
+
