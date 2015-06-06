@@ -104,7 +104,17 @@ https://github.com/HirotakaTakayama/HirotakaTakayama-sezemi-2015-readable-code
 見た目を考慮した空白のルール
 
 
+# 5
 
+### 実際のコード
+https://github.com/tiwawan/HirotakaTakayama-sezemi-2015-readable-code
+if( recipe_selected == -1 || recipe_selected == recipe_id){
+
+### リーダブルだと思う理由
+IDが-1というのは普通ではないので、recipe_selected == -1という式がtrueのときは選択されているレシピがないということを意味するつもりで書いた。私と同じ感覚を持っている人にはリーダブルだと思う。
+
+### この書き方の一言説明
+数字のイメージ
 
 
 
