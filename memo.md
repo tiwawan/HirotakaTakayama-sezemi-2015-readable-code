@@ -1,10 +1,13 @@
-### 実際のコード(spec 3)
+### 実際のコード
 https://github.com/HirotakaTakayama/HirotakaTakayama-sezemi-2015-readable-code
 
+・memo1
 
 ```c
 exit( EXIT_FAILURE );
 ```
+
+・memo2
 
 ```c
 #define ARG_NUM 1
@@ -15,6 +18,7 @@ if( argc != ARG_NUM + 1 ) {
 ### どうしてリーダブルだと思っているかの説明
 
 ・memo1
+
 コマンドの終了ステータスは、正常終了するときは`0`、異常終了するときは
 `0`以外の値を返すのが通例です。そのため、このコードは次のようにしても
 通例通りの動きになります。
@@ -27,6 +31,7 @@ exit(1);
 であると考えました。
 
 ・memo2
+
 引数の数は、 ./a.outを含めて2つになりますが、取り込むテキストは1つであり、
 ./a.out以外で必要とする引数を指定するために、ARG_NUMという定数を使用し、
 リーダブルにしようと考えました。
