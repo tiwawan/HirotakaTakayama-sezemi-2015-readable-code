@@ -2,11 +2,11 @@
 https://github.com/HirotakaTakayama/HirotakaTakayama-sezemi-2015-readable-code
 
 
-```spec3 memo1
+```c
 exit( EXIT_FAILURE );
 ```
 
-```spec3 memo2
+```c
 #define ARG_NUM 1
 if( argc != ARG_NUM + 1 ) {
 ```
